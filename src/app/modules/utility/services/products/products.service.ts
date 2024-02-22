@@ -13,7 +13,7 @@ export class ProductsService {
   }
 
   public loadProducts(page: any, size: any, searchText: any): Observable<any> {
-    return this.http.get(this.url + 'products/');
+    return this.http.get(this.url + 'products/find-all');
   }
 
 }
